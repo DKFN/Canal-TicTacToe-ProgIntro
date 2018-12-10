@@ -1,0 +1,116 @@
+/* I used this palette : https://lospec.com/palette-list/sweetie-16 :) */
+
+.jeu {
+    border: 4px solid #f4f4f4;
+    border-radius: 20px;
+
+    width: 40em;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 2em;
+
+    min-height: 30em;
+    background-color: #29366f;
+
+    font-family: Permanent Marker, Arial;
+}
+
+.titre-jeu {
+    font-size: 42px;
+    font-style: italic;
+    color: #b14156;
+    font-family: Gloria Hallelujah;
+}
+
+.conteneur-morpion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.case {
+
+    /*
+     *  Ici, je precise que la largeur des cases sont variables et qu'elles doivent faire environ
+     *   1/4 de l'espace total disponible (25%)
+     *  Etant donne que je rajoute des marges en dessous, il n'y aura que 3 cases dans l'espace au lieu de 4 :)
+     */
+    flex-grow: 1;
+    flex-basis: 25%;
+
+
+
+    /* Je gere les marges et la taille en fonction de la taille de l'ecran */
+    margin: 0.4em;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 7em;
+
+    /* J'ajoute une petite bordure */
+    border: 2px solid red;
+    border-radius: 20px;
+
+    /* Pour avoir le texte parfaitement au millieu de la case */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Je lui donne une couleur papier */
+    background-color: #ffd079;
+
+
+    transition-duration: 300ms;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.case-text {
+    /* La position absolue permet de ne pas impacter la taille de la case et donc je peux mettre un gros texte sans
+        agrandir la taille de la case
+     */
+    position: absolute;
+    font-size: 100px;
+    color: black;
+
+    transition-duration: 300ms;
+}
+
+/* Les animations ! Donnez un peu plus de vie et de feedback a votre interface */
+.case:hover {
+    transition-duration: 300ms;
+
+    box-shadow: 10px 5px 5px black;
+    margin-top: -5px;
+
+    opacity: 5;
+}
+
+
+.case:active {
+    transition-duration: 20ms;
+    background-color: white;
+}
+
+.player1 {
+    color: #38b86e;
+}
+
+.player2 {
+    color: #b14156;
+}
+
+.error {
+    background-color: red;
+}
+
+.win {
+    background-color: green;
+}
+

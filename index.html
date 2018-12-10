@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>myMorpion!</title>
+        <link rel="stylesheet" type="text/css" href="css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="css/jeu.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico|Permanent+Marker" rel="stylesheet">
+    </head>
+    <body>
+        <div class="conteneur">
+            <div class="jeu">
+                <span class="titre-jeu">
+                    Ceci est le futur jeu !
+                </span>
+
+                <div class="conteneur-joueur">
+                        Joueur 1 [ <span id="score-joueur1">0</span> ]
+                        Joueur 2 [ <span id="score-joueur2">0</span> ]
+                </div>
+
+                <div id="text-jeu">
+                    Il vous reste <span id="jeu-timer">10 secondes</span>
+                </div>
+
+                <div class="conteneur-morpion">
+                    <div class="case" id="case-0">
+                        <span class="case-text player1">
+                           X
+                        </span>
+                    </div>
+                    <div class="case" id="case-1">
+                        <div class="case-text player2">
+                           O
+                        </div>
+                    </div>
+                    <div class="case" id="case-2">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                    <div class="case" id="case-3">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                    <div class="case" id="case-4">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                    <div class="case" id="case-5">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                    <div class="case" id="case-6">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                    <div class="case" id="case-7">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                    <div class="case" id="case-8">
+                        <div class="case-text">
+                           X
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/jeu.js" ></script>
+        <script type="text/javascript">
+            Jeu.commencer();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+/**
+ *  Ce fichier est responsable pour bien positionner le "carre" qui contiens le jeu au millieu de la page
+ */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.conteneur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    background-color: #324056;
+    height: 100%;
+}
+
+.align-top {
+    align-self: flex-start;
+}
+
+.align-bottom {
+    align-self: flex-end;
+}
